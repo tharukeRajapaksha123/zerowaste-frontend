@@ -1,0 +1,29 @@
+/* src/components/Home.css */
+
+.logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 16px 24px 16px 0;
+    float: left;
+}
+
+.site-layout-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button {
+    margin: 16px;
+    background-color: greenyellow;
+}

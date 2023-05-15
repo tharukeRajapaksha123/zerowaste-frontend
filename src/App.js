@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import 'antd/dist/reset.css';
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import CollectorsResponse from './Components/Collector/CollectorResponse';
+import AddCollector from './Components/Collector/AddCollector';
+import UpdateCollector from './Components/Collector/UpdateCollector';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element = {<Home/>}/>
+        <Route path="/collector-response" element = {<CollectorsResponse/>}/>
+        <Route path="/add-collector" element = {<AddCollector/>}/>
+        <Route path="/update-collector/:id" element = {<UpdateCollector/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
