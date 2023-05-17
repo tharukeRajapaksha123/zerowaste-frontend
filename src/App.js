@@ -7,6 +7,9 @@ import UpdateCollector from './Components/Collector/UpdateCollector';
 import AssignWorkResponse from './Components/AssaignWork/AssignWorkResponse';
 import AddAssignWork from './Components/AssaignWork/AddAssignWork';
 import UpdateAssignWork from './Components/AssaignWork/UpdateAssignWork';
+import ClientsResponse from './Components/Clients/ClientResponse';
+import AddClient from './Components/Clients/AddClient';
+import UpdateClient from './Components/Clients/UpdateClient';
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +21,9 @@ function App() {
         <Route path="/work-response" element = {<AssignWorkResponse/>}/>
         <Route path="/add-work" element = {<AddAssignWork/>}/>
         <Route path="/update-work/:id" element = {<UpdateAssignWork/>}/>
+        <Route path="/client-response" element = {<ClientsResponse/>}/>
+        <Route path="/add-client" element = {<AddClient/>}/>
+        <Route path="/update-client/:id" element = {<UpdateClient/>}/>
       </Routes>
     </BrowserRouter>
   );

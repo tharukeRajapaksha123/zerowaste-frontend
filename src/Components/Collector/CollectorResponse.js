@@ -56,7 +56,10 @@ const CollectorsResponse = () => {
                         navigator(`/update-collector/${record._id}`)
                     }}>Update</Button>
                     <Button type="danger" onClick={async () => {
-                       workAssignments
+                        await axios.delete(`http://localhost:5000/api/collectors/${record._id}`).then(async (res) => {
+                            const result = await axios.get('http://localhost:5000/api/collectors');
+                            setData(result.data);
+                        })
                     }}>Delete</Button>
                 </span>
             ),

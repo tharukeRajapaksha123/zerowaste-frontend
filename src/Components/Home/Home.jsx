@@ -62,7 +62,9 @@ const Home = () => {
                 className='home-button'
                 bordered={false} 
                 hoverable
-                onClick={() => {/*navigate to the Manage Clients page*/}}
+                onClick={() => {
+                  navigate("/client-response")
+                }}
                 >
                 <EnvironmentOutlined style={{ fontSize: '72px', color: '#52c41a' }} />
               </Card>
