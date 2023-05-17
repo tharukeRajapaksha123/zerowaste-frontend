@@ -93,7 +93,7 @@ const CollectorsResponse = () => {
                     <Table columns={columns} dataSource={filteredData} />
                 </div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>Zero Waste ©2023 Created by OpenAI</Footer>
+            <Footer style={{ textAlign: 'center' }}>Zero Waste ©2023 Created by Gayashan</Footer>
         </Layout>
     );
 }

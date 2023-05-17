@@ -38,7 +38,9 @@ const Home = () => {
                 className='home-button'
                 bordered={false} 
                 hoverable
-                onClick={() => {/*navigate to the Assign Work page*/}}
+                onClick={() => {
+                  navigate("/work-response")
+                }}
                 >
                 <CarryOutOutlined style={{ fontSize: '72px', color: '#52c41a' }} />
               </Card>
@@ -68,7 +70,7 @@ const Home = () => {
           </Row>
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>Zero Waste ©2023 Created by OpenAI</Footer>
+      <Footer style={{ textAlign: 'center' }}>Zero Waste ©2023 Created by Gayashan</Footer>
     </Layout>
   );
 }
